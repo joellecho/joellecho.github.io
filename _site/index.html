@@ -74,23 +74,36 @@
         <div class="nine columns main-description">
             <h1>Joelle Hyunseo Cho</h1>
             <p><b>Venturing my Life under Discipline</b></p>
-            <p>📧 joellehscho@gmail.com</p>
-            <p> 👤 Republic of Korea | U.S. F1 OPT holder</p>
-            <p id="kst"> Timezone: </p>
 
-            <script>
-              // Function to update the content of the "KST" heading every second
-              function updateKST() {
-                const heading = document.getElementById("kst");
-                const currentTime = new Date().toLocaleTimeString(); // Get the current time in HH:mm:ss format
-                heading.textContent = currentTime; // Update the content of the heading with the current time
+            <!--  Email CSS  -->
+            <style>
+              .email-link {
+                  text-decoration: none;  /* Removes the underline by default */
+                  color: inherit;         /* Uses the surrounding text color */
               }
-          
-              // Call the updateKST function every second (1000 milliseconds)
-              setInterval(updateKST, 1000);
+              .email-link:hover, 
+              .email-link:focus {
+                  text-decoration: underline; /* Adds the underline on hover or focus */
+              }
+            </style>
+            <p><a class="email-link" href="mailto:joellehscho@gmail.com">📧 joellehscho@gmail.com</a></p>
+
+            <p> 👤 Republic of Korea | U.S. F1 OPT holder</p>
+            <p id="currentTime"></p>
+            <script>
+              function displayCurrentTime() {
+                  let now = new Date();
+                  let hours = now.getHours();
+                  let minutes = now.getMinutes();
+
+                  // Make sure hours and minutes are two digits
+                  hours = hours < 10 ? '0' + hours : hours;
+                  minutes = minutes < 10 ? '0' + minutes : minutes;
+                  document.getElementById('currentTime').innerText = `🕦 Timezone(KST): ${hours}:${minutes}`;
+              }
+              
+              displayCurrentTime();
             </script>
-
-
               <!--
               <span onclick="window.open('')" style="cursor: pointer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -98,21 +111,21 @@
               -->
               <span onclick="window.open('https://www.linkedin.com/in/joellecho')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
-                  <i class="fa fa-linkedin" aria-hidden="true" style="font-size: 33px;"></i>
+                  <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 28px;"></i>
                   <p style="margin-left: 5px;">linkedin.com/in/joellecho</p>
                 </div>
               </span>
               <br>
               <span onclick="window.open('https://github.com/joellecho')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
-                  <i class="fa fa-github" aria-hidden="true" style="font-size: 33px;"></i>
+                  <i class="fa fa-github" aria-hidden="true" style="font-size: 28px;"></i>
                   <p style="margin-left: 5px;">github.com/joellecho</p>
                 </div>
               </span>
               <br>
               <span onclick="window.open('https://www.instagram.com/joellecho/')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
-                  <i class="fa fa-instagram" aria-hidden="true" style="font-size: 33px;"></i>
+                  <i class="fa fa-instagram" aria-hidden="true" style="font-size: 28px;"></i>
                   <p style="margin-left: 5px;">instagram.com/joellecho</p>
                 </div>
               </span>
@@ -129,7 +142,7 @@
           <!--<li class="navbar-item"><a class="navbar-link" href=//index.html#publications>Publications</a></li>-->
           <li class="navbar-item"><a class="navbar-link" href=//index.html#education>Education</a></li>
           <li class="navbar-item"><a class="navbar-link" href=//index.html#experience>Experience</a></li>
-          <!--<li class="navbar-item"><a class="navbar-link" href=//index.html#projects>Projects</a></li>-->
+          <li class="navbar-item"><a class="navbar-link" href=//index.html#certificates>Certificates</a></li>
           <li class="navbar-item"><a class="navbar-link" href=//index.html#resume>Vita</a></li>
         </ul>
       </div>
@@ -279,51 +292,65 @@
   </div>
 </div>
 
-
-<!-- ========== PROJECTS ========== --> 
-<div class="docs-section" id="projects">
+<!-- ========== PUBLICATIONS - Select ========== -->
+<div class="docs-section" id="certificates">
   <h4>Certificates</h4>
 
+  <p>Most recent publications on <a href="" target="_blank">
+    <!-- Google Scholar -->
+    IEEExplore</a><br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
   <ul class="tab-nav">
-    <li><div class="button" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button active" data-ref="#projects-all">All</div></li>
+    <!--
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+    -->
+    <li><div class="button" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane" id="projects-selected">
+    <!--
+    <div class="tab-pane active" id="papers-selected">
+    -->
+    <div class="tab-pane" id="papers-selected">
       
       
     </div>
-
-    <div class="tab-pane active" id="projects-all">
+    
+    <!--
+    <div class="tab-pane" id="papers-all">
+    -->
+    <div class="tab-pane active" id="papers-all">
       
-        
-        
-          <div class="row">
-        
+        <div class="paper">
+          <p class="title"><b>Super-Resolution Based Video Coding Scheme</b></p>
+          <p><b>Hyunmin Cho</b>, Kiho Choi</p>
+          <p><i>CVPR'22, Workshop on Challenge on Learned Image Compression. 2022.</i></p>
+           <div class="paper-buttons">
+            
+              <a class="button" href="//assets/publications/2022_Challenge_on_Learned_Image_Compression/paper.pdf" target="_blank">Paper</a>
+            
 
-          <div class="four columns">
-            <div class="project-container">
+            
 
-                <div class="project-image-container">
-                  <a href="projects/2023_transfer-learning-unimatch.html">
-                    <img src="assets/projects/2023_transfer-learning-unimatch/thumbnail.jpeg" class="u-max-full-width" />
-                  </a>
-                </div>
+            
 
-                <div class="project-caption">
-                  <b>Enhancing Accuracy in Inclement Weather Using Transfer Learning</b> <br/>
-                  Experiments on transfer learning for inclement weather
-                </div>
+            
 
-            </div>
+            
+
+            
+
           </div>
-
-        
+        </div>
       
     </div>
   </div>
 </div>
+
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
