@@ -1,7 +1,31 @@
 papers:
 
-  - title: "Super-Resolution Based Video Coding Scheme"
-    authors: "<b>Hyunmin Cho</b>, Kiho Choi"
-    venue: "CVPR'22, Workshop on Challenge on Learned Image Compression. 2022."
-    paper_pdf: "/assets/publications/2022_Challenge_on_Learned_Image_Compression/paper.pdf"
+  - title: "3D SARS-CoV-19 Protein Visualization With Biopython"
+    authors: "Coursera Project Network"
+    venue: "Skills | Biopython, Bioinformatics, Biotechnology"
+    certificate: "/assets/certificates/c5.pdf"
+    selected: n
+
+  - title: "Build a Data Science Web App with Streamlit and Python"
+    authors: "Coursera Project Network"
+    venue: "Skills | Streamlit, Web development"
+    certificate: "/assets/certificates/c4.pdf"
+    selected: n
+
+  - title: "Data Analysis with R Programming"
+    authors: "Google"
+    venue: "Skills | R programming"
+    certificate: "/assets/certificates/c3.pdf"
+    selected: n
+
+  - title: "Data Science Methodology"
+    authors: "IBM"
+    venue: "Skills | Data Science Methodology"
+    certificate: "/assets/certificates/c2.pdf"
+    selected: n
+
+  - title: "What is Data Science?"
+    authors: "IBM"
+    venue: "Skills | Data Science"
+    certificate: "/assets/certificates/c1.pdf"
     selected: n
