@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Enhancing Accuracy in Inclement Weather Using Transfer Learning
-subtitle: "Experiment for transfer learning for inclement weather"
+title: "Effectiveness of a Novel Diet for Weight Loss in Women"
+subtitle: "A Randomized Clinical Trial with Varying Treatment Effects Over Time"
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 

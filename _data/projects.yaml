@@ -1,6 +1,6 @@
 projects:
-  - title: "Enhancing Accuracy in Inclement Weather Using Transfer Learning"
-    subtitle: "Experiments on transfer learning for inclement weather"
-    thumbnail: "assets/projects/2023_transfer-learning-unimatch/thumbnail.jpeg"
-    url: "projects/2023_transfer-learning-unimatch.html"
+  - title: "Effectiveness of a Novel Diet for Weight Loss in Women"
+    subtitle: "A Randomized Clinical Trial with Varying Treatment Effects Over Time"
+    thumbnail: "assets/projects/2023_p1_noveldiet/thumbnail.png"
+    url: "projects/2023_p1_noveldiet.html"
     selected: n
