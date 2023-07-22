@@ -1,0 +1,274 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="about">
+  <h4>About</h4>
+  <p>As a passionate devotee to <b>signal processing</b>, I am constantly driven by the intricate challenge of metamorphosing 
+    raw data into cogent information. My scholarly pursuits are deeply rooted in the domain of <b>Implicit Neural Representation</b>, 
+    a discipline that offers boundless opportunities and complex challenges. Moreover, my intellectual curiosity extends to various 
+    <b>compression</b> techniques, some of which I had exploring during the <a href="http://compression.cc">CLIC22</a>. 
+
+    The ever-evolving arena of digital technology has always presented captivating methodologies such as <b>Super-Resolution (SR)</b> 
+    and <b>de-noising</b>. These sectors not only intrigue me but also motivate my ambitions to pioneer, innovate, and devise revolutionary 
+    solutions that can recalibrate our understanding and interpretation of signals.
+  </p>
+</div>
+
+<!-- ========== PUBLICATIONS - Select ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">
+    <!-- Google Scholar -->
+    IEEExplore
+  </a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <!--
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+    -->
+    <li><div class="button" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <!--
+    <div class="tab-pane active" id="papers-selected">
+    -->
+    <div class="tab-pane" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <!--
+    <div class="tab-pane" id="papers-all">
+    -->
+    <div class="tab-pane active" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- ========== Education ========== -->
+<div class="docs-section" id="education">  
+  <h4>Education</h4>
+  
+  <p style="display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin-bottom: 1px; "><b>Gachon University</b>
+                                   <span>Mar.2020 - Feb.2024</span>
+  </p> 
+  <p>
+    B.S. in Software
+  </p>
+</div>
+
+
+<!-- ========== Experiences ========== -->
+<div class="docs-section" id="experience">
+  <h4>Experience</h4>
+  <p style="display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 1px;"><b>DGIST</b>
+                         <span>Dec.2022 - Feb.2023</span>
+  </p> 
+  <p>
+    Research Intern at Image Processing Lab
+  </p>
+
+  <p style="display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 1px;"><b>Gachon University</b>
+                         <span>Dec.2021 - Nov.2022</span>
+  </p> 
+  <p>
+    Research Intern at Video Processing Lab
+  </p>
+</div>
+
+<!-- ========== PROJECTS ========== 
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+    <li><div class="button" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button active" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+    <div class="tab-pane" id="projects-selected">
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+
+    <div class="tab-pane" id="projects-all">
+
+    <div class="tab-pane active" id="projects-all">
+      {% for project in site.data.projects.projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+--> 
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Vitæ</h4>
+
+  <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+
+  <!-- The Timeline 
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul> --> 
+</div>
+
+
+<div class="docs-section" id="template">
+    <!--<h4>Acknowledgement</h4>-->
+    This website uses the website design and template by 
+    <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a>.
+</div>

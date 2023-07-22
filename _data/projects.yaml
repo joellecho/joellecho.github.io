@@ -1,0 +1,6 @@
+projects:
+  - title: "Enhancing Accuracy in Inclement Weather Using Transfer Learning"
+    subtitle: "Experiments on transfer learning for inclement weather"
+    thumbnail: "assets/projects/2023_transfer-learning-unimatch/thumbnail.jpeg"
+    url: "projects/2023_transfer-learning-unimatch.html"
+    selected: n

@@ -1,0 +1,19 @@
+experiences:
+
+- place: "-"
+  time: "2024 - now"
+  title: "Master's Student"
+  subtitle: "Computer Science and Engineering"
+  category: "school"
+
+- place: "DGIST"
+  time: "Dec 2023 - Feb 2024"
+  title: "Research Intern"
+  subtitle: "Image procecssing lab, IPL"
+  category: "work"
+
+- place: "Gachon University"
+  time: "2020 - 2024"
+  title: "B.Sc. Student"
+  subtitle: "Computing Science <br/> 5/122 ranks"
+  category: "school"

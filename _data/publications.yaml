@@ -1,0 +1,7 @@
+papers:
+
+  - title: "Super-Resolution Based Video Coding Scheme"
+    authors: "<b>Hyunmin Cho</b>, Kiho Choi"
+    venue: "CVPR'22, Workshop on Challenge on Learned Image Compression. 2022."
+    paper_pdf: "/assets/publications/2022_Challenge_on_Learned_Image_Compression/paper.pdf"
+    selected: n
