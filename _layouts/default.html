@@ -76,6 +76,21 @@
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.email }}</p>
             <p>{{ site.data.main_info.citizenship }}</p>
+            <p id="kst"> KST </p>
+
+            <script>
+              // Function to update the content of the "KST" heading every second
+              function updateKST() {
+                const heading = document.getElementById("kst");
+                const currentTime = new Date().toLocaleTimeString(); // Get the current time in HH:mm:ss format
+                heading.textContent = currentTime; // Update the content of the heading with the current time
+              }
+          
+              // Call the updateKST function every second (1000 milliseconds)
+              setInterval(updateKST, 1000);
+            </script>
+
+
               <!--
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -87,14 +102,14 @@
                   <p style="margin-left: 5px;">linkedin.com/in/joellecho</p>
                 </div>
               </span>
-              
+              <br>
               <span onclick="window.open('https://github.com/joellecho')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
                   <i class="fab fa-github" aria-hidden="true" style="font-size: 33px;"></i>
                   <p style="margin-left: 5px;">github.com/joellecho</p>
                 </div>
               </span>
-              
+              <br>
               <span onclick="window.open('https://www.instagram.com/joellecho/')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
                   <i class="fab fa-instagram" aria-hidden="true" style="font-size: 33px;"></i>
