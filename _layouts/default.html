@@ -6,9 +6,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Hyunmin Cho">
-  <meta name="author" content="Hyunmin Cho">
-  <meta property="og:title" content="Hyunmin Cho" />
+  <meta name="description" content="Joelle Hyunseo Cho">
+  <meta name="author" content="Joelle Hyunseo Cho">
+  <meta property="og:title" content="Joelle Hyunseo Cho" />
   <meta property="og:type" content="website" />
   <!-- <meta property="og:url" content="http://www.martinsaveski.com" /> -->
   <meta property="og:site_name" content="Hyunmin Cho" />
@@ -75,6 +75,7 @@
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.email }}</p>
+            <p>{{ site.data.main_info.citizenship }}</p>
               <!--
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -82,7 +83,7 @@
               -->
               <span onclick="window.open('https://www.linkedin.com/in/joellecho')" style="cursor: pointer">
                 <div style="display: inline-flex; align-items: center;">
-                  <i class="fab fa-linkedin" aria-hidden="true" style="font-size: 33px;"></i>
+                  <i class="fab fa-linkedin-square" aria-hidden="true" style="font-size: 33px;"></i>
                   <p style="margin-left: 5px;">linkedin.com/in/joellecho</p>
                 </div>
               </span>
@@ -111,7 +112,7 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#about" | prepend: site.baseurl }}>About</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
+          <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>-->
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#education" | prepend: site.baseurl }}>Education</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#experience" | prepend: site.baseurl }}>Experience</a></li>
           <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
@@ -136,9 +137,6 @@
           </span>
           <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
             <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
           </span>
         </div>
       </div>

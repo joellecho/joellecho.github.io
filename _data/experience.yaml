@@ -1,19 +1,19 @@
 experiences:
 
-- place: "-"
-  time: "2024 - now"
-  title: "Master's Student"
-  subtitle: "Computer Science and Engineering"
-  category: "school"
-
-- place: "DGIST"
-  time: "Dec 2023 - Feb 2024"
-  title: "Research Intern"
-  subtitle: "Image procecssing lab, IPL"
+- place: "Korea Advanced Institute of Science & Technology"
+  time: "Aug 2023 - May 2024"
+  title: "Master of Entrepreneurship & Innovation <br> School of Business and Technology Managment"
+  subtitle: "Daejeon, South Korea"
   category: "work"
 
-- place: "Gachon University"
-  time: "2020 - 2024"
-  title: "B.Sc. Student"
-  subtitle: "Computing Science <br/> 5/122 ranks"
+- place: "San Jose State University"
+  time: "Aug 2020 - May 2023"
+  title: "B.S. in Applied Mathematics (Statistics Concentration) <br> College of Science"
+  subtitle: "San Jose, California"
+  category: "school"
+
+- place: "Sookmyung Girls' High School"
+  time: "Mar 2015 - Feb 2018"
+  title: "High School General Education"
+  subtitle: "Private Highschool located in Seoul, South Korea"
   category: "school"
