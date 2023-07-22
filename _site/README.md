@@ -1,4 +1,4 @@
-# Hyunmin Cho's Website | [Hello!](https://hyunmin-jasper-cho.github.io)
+# Hyunseo Cho's Website 
 ### (Based on Martin Saveski's Website)
 
 ## How to run locally
