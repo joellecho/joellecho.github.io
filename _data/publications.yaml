@@ -1,4 +1,11 @@
 papers:
+ 
+ - title: "Google Analytics Certification"
+    authors: "Google"
+    venue: "Skills | Google Analytics"
+    certificate: "/assets/certificates/google_analytics.pdf"
+    selected: n
+
 
   - title: "3D SARS-CoV-19 Protein Visualization With Biopython"
     authors: "Coursera Project Network"
