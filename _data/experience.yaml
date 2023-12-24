@@ -1,10 +1,15 @@
 experiences:
+- place: "Samsung SDI Hungary"
+  time: "Feb 2024 - Aug 2024"
+  title: "Junior Staff"
+  subtitle: "Göd, Hungary"
+  category: "work"
 
 - place: "KAIST"
-  time: "Aug 2023 - May 2024"
+  time: "Aug 2023 - Oct 2023"
   title: "Master of Entrepreneurship & Innovation <br> School of Business and Technology Managment"
   subtitle: "Daejeon, South Korea"
-  category: "work"
+  category: "school"
 
 - place: "San Jose State University"
   time: "Aug 2020 - May 2023"
